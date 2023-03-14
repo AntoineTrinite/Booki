@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
+
+
 <body>
-    
+<!-- Header -->
     <div class="main-container">
         <header>
             <img  id="logo" src="./images/logo/Booki.png" alt="Logo">
@@ -27,11 +29,36 @@
 
         </header>
 
-        <!-- <main>
+        <main>
+        <!-- Zone Hero -->
+            <div class="hero">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+    
+        <!-- Search bar -->
+            <form class="searchBar" action="" method="post">
+                <label class="searchIcon" for="ville"><i class="fa-solid fa-location-dot location-icon"></i></label>
+                <input class="searchInput" type="text" name="ville" id="ville" placeholder="Marseille, France">
+                <button class="searchBtn">Rechercher</button>
+            </form>
+        <!-- Filtres -->
+            <div class="filter">
+                <h4>Filtres</h4>
+                <button class="filterBtn">Économique</button>
+                <button class="filterBtn">Familial</button>
+                <button class="filterBtn">Romantique</button>
+                <button class="filterBtn">Nos pépites</button>
+
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+        <!-- Zone principale -->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <h2 class="section-title">Hébergements à Marseille</h2>
                 </section>
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -92,9 +119,47 @@
                     </div>
                 </section>
             </div>
-        </main> -->
+        <!-- Zone Activités -->
+            <!-- <div class="activites">
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div id="all-activities-cards">
+                    <div class="card-activites"><img src="images\activites\reno-laithienne.jpg" alt=""><h3>Vieux-Port</h3></div>
+                    <div class="card-activites"><img src="images\activites\paul-hermann.jpg" alt=""><h3>Fort de Pomègues</h3></div>
+                    <div class="card-activites"><img src="images\activites\kilyan-sockalingum.jpg" alt=""><h3>Parc national des Calanques</h3></div>
+                    <div class="card-activites"><img src="images\activites\florian-wehde.jpg" alt=""><h3>Notre-Dame-de-la-Garde</h3></div>
+                </div>
+            </div>
 
-        <footer></footer>
+        <!-- Footer area -->
+            <!-- <footer>
+
+                <div class="footer-part">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-part">
+                    <h4>Nos hébergements</h4>
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Proposer votre hôtel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-part">
+                    <h4>Assistance</h4>
+                    <ul>
+                        <li><a href="#">Centre d’aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+    
+            </footer> -->
+        </main>
+
+
     </div>
 </body>
 
