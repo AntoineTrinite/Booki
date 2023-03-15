@@ -91,6 +91,46 @@ h1 {
     border: 0;
 }
 
+/* Filtres */
+.filter{
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0;
+    align-items: center;
+}
+.filter-title{
+    margin-right: 15px;
+}
+.filterBtn{
+    background-color: white;
+    padding: 0;
+    margin-right: 15px;
+    height: 50px;
+    box-shadow:inset 0px 0px 0px 2px #D9D9D9;
+    border: 0px solid #D9D9D9;
+    border-radius: 25px;
+}
+
+.filterBtn:hover{
+    background-color: #DEEBFF;
+}
+.filter-fa{
+    margin-right: 10px;
+    height: 18px;
+    width: 22px;
+}
+.filter-text{
+    margin: 0 19px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.fa-info {
+    font-size: 10px;
+    padding: 7px 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 24px;
+    margin-right: 10px;
+}
 /* Partie Body */
 body {
     display: flex;
