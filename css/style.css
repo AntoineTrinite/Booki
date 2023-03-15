@@ -153,6 +153,21 @@ main {
 .hebergements {
     width: 65%;
 }
+#hebergements-grid{
+    display: grid;
+    max-width: 811px;
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 30px;
+}
+.grid-card {
+    height: 207px;
+}
+.grid-img{
+    height: 124px;
+    width: 250px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+}
 
 /****** Populaires ***********/
 .populaires {
