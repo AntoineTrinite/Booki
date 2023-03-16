@@ -41,7 +41,7 @@ header {
 }
 
 .header_btn:hover{
-    border-top: 2px solid var(--main-color);
+    border-top: 2px solid var(--main-bg-color);
     color: var(--main-color);
     
 }
@@ -59,38 +59,52 @@ h1 {
 
 
  /* SEARCH BAR */
- .searchBar{
-    border: 1px solid var(--main-bg-color);
-    border-radius: 15px 15px;
-    width: fit-content;
-    height: auto;
- }
-.location-icon {
-    padding: 18px 15px;
-    color: #000000;
+.search-bar{
+    margin: 35px 0;
+}
+
+.fa-location-dot{
+    transform: translateX(4px);
+    padding: 15px 18px 16px 18px;
     background-color: var(--main-bg-color);
-    border-radius: 15px 0 0 15px;
-}
-
-.searchInput{
-    padding: 0 15px;
-    border-width: 0;
-    outline: none;
+    border-radius: 15px 0 0 15px ;
     font-size: 18px;
-    font-weight: bold;
-    
-}
-.searchInput::placeholder{
     color: #000000;
-}
-.searchBtn {
-    background-color: var(--main-color);
-    color: white;
-    padding: 18px 15px;
-    border-radius: 0 15px 15px 0;
-    border: 0;
-}
 
+}
+.searchTerm{
+    padding: 13px 24px;
+    height: 21px;
+    font-size: 18px;
+    width: 147px;
+    font-weight: bold;
+    border: 1px solid var(--main-bg-color);
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+.searchTerm::placeholder{
+    color:#000000;
+}
+.searchButton h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    width: 100px;
+    height: 21px;
+}
+.searchButton{
+    width: 132px;
+    transform: translateX(-4px);
+    padding: 14px 16px;
+    border: 0;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 0 15px 15px 0;
+}
+.fa-search {
+    display: none;
+}
 /* Filtres */
 .filter{
     display: flex;
@@ -192,21 +206,6 @@ main {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-}
-#hebergements-grid{
-    display: grid;
-    max-width: 811px;
-    grid-template-columns: repeat(3, 250px);
-    grid-gap: 30px;
-}
-.grid-card {
-    height: 207px;
-}
-.grid-img{
-    height: 124px;
-    width: 250px;
-    border-radius: 20px 20px 0 0;
-    padding: 5px;
 }
 
 /****** Populaires ***********/
@@ -319,6 +318,8 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
+
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
