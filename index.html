@@ -23,8 +23,8 @@
         <header>
             <img  id="logo" src="./images/logo/Booki.png" alt="Logo">
             <div class="header-right">
-                <div><button class="header_btn">Hébergements</button></div>
-                <div><button class="header_btn">Activités</button></div>
+                <div class="header-button-div"><button class="header_btn">Hébergements</button></div>
+                <div class="header-button-div"><button class="header_btn">Activités</button></div>
             </div>
 
         </header>
@@ -49,10 +49,12 @@
         <!-- Filtres -->
             <div class="filter">
                 <h4 class="filter-title">Filtres</h4>
-                <button class="filterBtn"><p class="filter-text"><i class="fa-solid fa-money-bill-wave filter-fa"></i>Économique</p></button>
-                <button class="filterBtn"><p class="filter-text"><i class="fa-solid fa-person filter-fa"></i>Familial</p></button>
-                <button class="filterBtn"><p class="filter-text"><i class="fa-solid fa-heart filter-fa"></i>Romantique</p></button>
-                <button class="filterBtn"><p class="filter-text"><i class="fa-solid fa-fire filter-fa"></i>Nos pépites</p></button>
+                <div id="General-Btn-filter">
+                    <button class="filterBtn"><p class="filter-text"><i class="fa-solid fa-money-bill-wave filter-fa"></i>Économique</p></button>
+                    <button class="filterBtn"><p class="filter-text"><i class="fa-solid fa-person filter-fa"></i>Familial</p></button>
+                    <button class="filterBtn"><p class="filter-text"><i class="fa-solid fa-heart filter-fa"></i>Romantique</p></button>
+                    <button class="filterBtn"><p class="filter-text"><i class="fa-solid fa-fire filter-fa"></i>Nos pépites</p></button>
+            </div>
             </div>
                 <p class="info-align"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             
@@ -259,7 +261,7 @@
                         <li><a href="#">Proposer votre hôtel</a></li>
                     </ul>
                 </div>
-                <div class="footer-part">
+                <div class="footer-part footer-last">
                     <h4>Assistance</h4>
                     <ul>
                         <li><a href="#">Centre d’aide</a></li>
