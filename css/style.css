@@ -29,7 +29,8 @@ header {
 #logo {
     width: 61.09px;
     height: 19px;
-    margin: 30px;
+    margin: 0px;
+    margin-top: 30px;
 }
 
 .header_btn{
@@ -139,8 +140,9 @@ h1 {
 }
 .filter-fa{
     margin-right: 10px;
-    height: 18px;
+    height: 22px;
     width: 22px;
+    font-size: 22px;
 }
 
 .fa-info {
@@ -160,14 +162,15 @@ body {
     margin: 0;
 }
 main {
-    margin: 0 50px;
+    margin: 0px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0px;
+    padding: 0 50px;
     box-sizing: border-box;
+    flex: 1 1 1;
 }
 
 .section-title {
@@ -205,23 +208,27 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between;
+    row-gap: 30px;
 }
 .card-hebergement {
-    max-width: 240px;
     max-height: 207px;
+    min-width: 250px;
+    column-gap: 30px;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
 }
 .card-hebergement img {
-    width: 240px;
+    display: block;
+    width: 100%;
     height: 124px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    flex: 100%;
 }
+
 
 .heb-card-title {
     margin-top: 4px;
@@ -297,7 +304,6 @@ main {
 .neutral-star{
     color: var(--main-bg-color);
 }
-
 /* Partie activités */
 .activites{
     margin-top: 65px;
@@ -330,6 +336,8 @@ main {
 .card-activites h3 {
     display: flex;
     margin-left: 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     align-items: center;
     font-weight: bold;
     font-size: 16px;
@@ -368,7 +376,11 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-
+    @media(max-width: 1410px) {
+        .group-hebergement-card{
+            justify-content: space-evenly;
+        }
+    }
 
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -378,21 +390,7 @@ a {
     .hebergements {
         width: 100%;
     }
-    .card-hebergement {
-        max-width: 258px;
-        max-height: 207px;
-        background-color: white;
-        border-radius: 20px;
-        padding: 5px;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    
-    }
-    .card-hebergement img {
-        width: 258px;
-        height: 124px;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -409,11 +407,13 @@ a {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 16px;
+        margin-bottom: 5px;
+
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .card-activites{
@@ -426,7 +426,7 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
     main {
         margin: 0px;
     }
@@ -446,9 +446,9 @@ a {
         border-top: 0;
         border-bottom: 2px solid var(--main-color);
     }
-    
+     */
     /* HERO */
-    h1 {
+    /* h1 {
         font-size: 22px;
         padding-bottom: 0;
         margin-bottom: 4px;
@@ -457,9 +457,9 @@ a {
         font-size: 16px;
         padding-top: 0;
         margin-top: 4px;
-    }
+    } */
         /* Filtres */
-    .filter{
+    /* .filter{
         flex-wrap: wrap;
     }
     .filter-title{
@@ -479,9 +479,9 @@ a {
     .filter-text{
         margin: 0 26px 0 19px;
         font-size: 14px;
-    }
+    } */
     /* SEARCH BUTTON */
-    .searchButton{
+    /* .searchButton{
         padding: 16px;
         width: 49px;
         height: 49px;
@@ -500,9 +500,9 @@ a {
         display:contents;
         height: 16px;
         width: 16px;
-    }
+    } */
     /* POPULAIRES */
-    .populaires-cards {
+    /* .populaires-cards {
         display: flex;
         flex-direction: column;
         margin-top: 33px;
@@ -512,18 +512,10 @@ a {
     }
     .hero {
         padding-left: 20px;
-    }
-
-
-
-
-
-
-
-
+    } */
 
 /* FOOTER PART */
-    footer {
+    /* footer {
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
@@ -536,4 +528,4 @@ a {
     .footer-last{
         margin-bottom: 0px;
     }
-}
+}  */
