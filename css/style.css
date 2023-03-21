@@ -116,6 +116,8 @@ h1 {
 }
 .filter-title{
     margin-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 .filterBtn{
     background-color: white;
@@ -130,16 +132,17 @@ h1 {
 .filterBtn:hover{
     background-color: #DEEBFF;
 }
-.filter-fa{
-    margin-right: 10px;
-    height: 18px;
-    width: 22px;
-}
 .filter-text{
     margin: 0 19px;
     font-size: 17px;
     font-weight: bold;
 }
+.filter-fa{
+    margin-right: 10px;
+    height: 18px;
+    width: 22px;
+}
+
 .fa-info {
     font-size: 10px;
     padding: 7px 10px;
