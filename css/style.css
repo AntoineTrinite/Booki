@@ -19,6 +19,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
+    padding-bottom: 30px;
     margin-bottom: 30px;
 }
 .header-right{
@@ -202,6 +203,7 @@ main {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+
 }
 .hebergement-title{
     margin-bottom: 30px;
@@ -350,7 +352,7 @@ footer {
     flex-direction: row;
     background-color: #F2F2F2;
     padding: 20px;
-    margin-top: 35px;
+    margin-top: 50px;
 }
 .footer-part{
     width: 100%;
