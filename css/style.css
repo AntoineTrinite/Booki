@@ -163,19 +163,17 @@ h1 {
 }
 /* Partie Body */
 body {
-    display: flex;
-    justify-content: center;
     margin: 0;
+
 }
 main {
     margin: 0px;
 }
 
 .main-container {
-    width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
+    margin: 0 50px;
 }
 
 .section-title {
@@ -186,6 +184,7 @@ main {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
+    gap: 40px;
     justify-content: space-between;
 }
 
@@ -213,12 +212,13 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 30px;
+    justify-content: space-between;
+    gap: 30px;
 }
 .card-hebergement {
+    flex-grow: 1;
     max-height: 207px;
-    min-width: 250px;
+    width: 250px;
     column-gap: 30px;
     background-color: white;
     border-radius: 20px;
@@ -256,6 +256,7 @@ main {
     border: none;
     font-size: 18px;
     font-weight: bold;
+    background: none;
 }
 
 /****** Populaires ***********/
@@ -381,7 +382,11 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-
+@media screen and (min-width: 1440px) {
+    .main-container {
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 1024px) {
     .filter-text{
         font-size: 16px;
@@ -433,13 +438,13 @@ a {
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 768px) {
     .main-container {
-        padding: 0px;
+        margin: 0;
     }
     main {
         margin: 0px;
     }
     header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 0;
     }
@@ -467,7 +472,7 @@ a {
     }
     .header-btn{
         margin: 0;
-        min-width: 50vw;
+        width: 50vw;
         padding-top: 0;
         padding-bottom: 15px;
         padding: 0 0 15px 0;
@@ -579,7 +584,6 @@ a {
     }
     #show-more{
         margin-top: 15px;
-        background-color: white;
     }
     /* Activités */
     #all-activities-cards{
