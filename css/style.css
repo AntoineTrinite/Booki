@@ -328,7 +328,7 @@ main {
     display: flex;
     flex-direction: row;
     margin: 15px;
-    justify-content: center;
+    justify-content: space-between;
 }
 .card-activites{
     width: 297px;
@@ -432,7 +432,6 @@ a {
     #all-activities-cards{
         display: flex;
         flex-direction: row;
-        flex-wrap:wrap;
         margin: 15px;
     }
     .card-activites{
