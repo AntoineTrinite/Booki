@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -81,9 +82,8 @@ h1 {
 }
 .search-term{
     padding: 13px 24px;
-    height: 21px;
     font-size: 18px;
-    width: 147px;
+    width: 195px;
     font-weight: bold;
     border: 1px solid var(--main-bg-color);
     border-left: 0;
@@ -175,7 +175,6 @@ main {
 
 .main-container {
     max-width: 1440px;
-    box-sizing: border-box;
     margin: 0 50px;
 }
 
@@ -195,7 +194,6 @@ main {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
 }
 .card {
     background-color: white;
@@ -296,7 +294,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -393,6 +390,9 @@ a {
 @media screen and (min-width: 1440px) {
     .main-container {
         margin: 0 auto;
+    }
+    body{
+        margin: 0 50px;
     }
 }
 @media screen and (max-width: 1024px) {
