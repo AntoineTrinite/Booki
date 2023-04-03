@@ -41,7 +41,8 @@ nav ul li {
     margin-top: 30px;
 }
 
-.header-btn{
+.header-a{
+    text-align: center;
     background-color: white;
     font-size: 16px;
     border: 0;
@@ -49,7 +50,7 @@ nav ul li {
     padding-top: 14px;
 }
 
-.header-btn:hover{
+.header-a:hover{
     border-top: 2px solid var(--main-color);
     color: var(--main-color);
     cursor: pointer;
@@ -219,7 +220,7 @@ main {
 }
 .card-hebergement {
     flex-grow: 1;
-    max-height: 207px;
+    height: 207px;
     width: 250px;
     column-gap: 30px;
     background-color: white;
@@ -231,7 +232,7 @@ main {
 .card-hebergement img {
     display: block;
     width: 100%;
-    height: 124px;
+    height: 114px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     flex: 100%;
@@ -240,11 +241,13 @@ main {
     margin-top: 4px;
     margin-bottom: 8px;
     font-size: 16px;
+    height: 19px;
 }
 .heb-card-subtitle {
     margin-top: 0;
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
+    height: 16px;
 }
 
 .euro {
@@ -252,6 +255,9 @@ main {
 }
 .heb-card-content{
     margin-left: 15px;
+}
+.card-hebergement .card-rating .fa-star{
+    font-size: 13px;
 }
 #show-more{
     margin-top: 30px;
@@ -278,12 +284,13 @@ main {
     display: flex;
     margin-top: 33px;
     cursor: pointer;
+    height: 146px;
 }
 
 .populaires-cards img {
     object-fit: cover;
     width: 33%;
-    height: 134px;
+    height:auto;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -299,17 +306,22 @@ main {
 .populaires-cards .card-title {
     margin-top: 10px;
     font-size: 16px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
+    font-size: 14px;
 }
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    align-items: center;
 }
 
+.populaires-cards .card-rating .fa-star{
+    font-size: 12px;
+}
 .neutral-star{
     color: var(--main-bg-color);
 }
@@ -419,6 +431,7 @@ a {
     }
     .populaires-cards .card {
         width: 30%;
+        height: 144px;
     }
     .populaires-cards .card-title {
         font-size: 16px;
@@ -454,6 +467,7 @@ a {
     }
     main {
         margin: 0px;
+        
     }
     header {
         flex-direction: row;
@@ -482,12 +496,12 @@ a {
     #logo{
         margin-top: 0;
     }
-    .header-btn{
+    .header-a{
         margin: 0;
         padding: 0 0 15px 0;
         width: 50vw;
     }
-    .header-btn:hover{
+    .header-a:hover{
         border-top: 0;
         border-bottom: 2px solid var(--main-color);
     }

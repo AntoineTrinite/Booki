@@ -20,61 +20,57 @@
 <body>
 <!-- Zone header -->
     <div class="main-container">
+        <section>
+            <header>
+                <nav>
+                    <ul>
+                        <li id="logo-li">
+                            <a href="#">
+                                <img  id="logo" src="./images/logo/Booki.png" alt="Logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-a" href="#">Hébergements</a>
+                        </li>
+                        <li>
+                            <a class="header-a" href="#">Activités</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <header>
-            <nav>
-                <ul>
-                    <li id="logo-li">
-                        <a href="#">
-                            <img  id="logo" src="./images/logo/Booki.png" alt="Logo">
-                        </a>
-                    </li>
-                    <li class="header-button-li">
-                        <a href="#">
-                            <button class="header-btn">Hébergements</button>
-                        </a>
-                    </li>
-                    <li class="header-button-li">
-                        <a href="#">
-                            <button class="header-btn">Activités</button>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-        <!-- Zone hero -->
-            <div class="hero">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-            </div>
-    
-        <!-- Zone search bar -->
-        <div class="search-bar">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" class="search-term" placeholder="Marseille, France">
-            <button type="submit" class="searchButton">
-              <i class="fa fa-search"></i>
-              <span id="search-text">Rechercher</span>
-           </button>
-        </div>
-
-        <!-- Zone filtres -->
-            <div class="filter">
-                <span class="filter-title">Filtres</span>
-                <div id="general-btn-filter">
-                    <button class="filter-btn filter-text"><i class="fa-solid fa-money-bill-wave filter-fa"></i>Économique</button>
-                    <button class="filter-btn filter-text"><i class="fa-solid fa-person filter-fa"></i>Familial</button>
-                    <button class="filter-btn filter-text"><i class="fa-solid fa-heart filter-fa"></i>Romantique</button>
-                    <button class="filter-btn filter-text"><i class="fa-solid fa-fire filter-fa"></i>Nos pépites</button>
+            <main>
+            <!-- Zone hero -->
+                <div class="hero">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
                 </div>
+        
+            <!-- Zone search bar -->
+            <div class="search-bar">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" class="search-term" placeholder="Marseille, France">
+                <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+                <span id="search-text">Rechercher</span>
+            </button>
             </div>
-                <p class="info-align">
-                    <i class="fa-solid fa-info"></i>
-                    Plus de 500 logements sont disponibles dans cette ville
-                </p>
 
+            <!-- Zone filtres -->
+                <div class="filter">
+                    <span class="filter-title">Filtres</span>
+                    <div id="general-btn-filter">
+                        <button class="filter-btn filter-text"><i class="fa-solid fa-money-bill-wave filter-fa"></i>Économique</button>
+                        <button class="filter-btn filter-text"><i class="fa-solid fa-person filter-fa"></i>Familial</button>
+                        <button class="filter-btn filter-text"><i class="fa-solid fa-heart filter-fa"></i>Romantique</button>
+                        <button class="filter-btn filter-text"><i class="fa-solid fa-fire filter-fa"></i>Nos pépites</button>
+                    </div>
+                </div>
+                    <p class="info-align">
+                        <i class="fa-solid fa-info"></i>
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+        </section>
         <!-- Zone principale -->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -249,7 +245,7 @@
                 </section>
             </div>
         <!-- Zone activités -->
-            <div class="activites">
+            <section class="activites">
                 <h2 class="section-title activites-title">Activités à Marseille</h2>
                 <div id="all-activities-cards">
                         <div class="card-activites">
@@ -269,7 +265,7 @@
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </div>    
                </div>
-            </div>
+            </section>
 
         <!-- Zone footer -->
             <footer>
